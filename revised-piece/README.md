@@ -7,7 +7,7 @@ variables for a linear regression model.
 For this example, we will use the dataset from my introductory statistics
 final group project, which is a maternal health and infant outcome dataset 
 called `babies.csv`. This data set contains information on the behavioral habits,
-education level, and physical characterists of mothers, fathers, and the 
+education level, and physical characteristics of mothers, fathers, and the 
 birth weight of their babies as an outcome variable for infant health. 
 This data set has many variables, of which we will only be using a few
 for the sake of conciseness and clarity. The variables we will be using
