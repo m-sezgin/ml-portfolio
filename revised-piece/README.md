@@ -20,7 +20,7 @@ all located in a notebook called `cross_val.ipynb`.
 There are unit tests for this piece that check that all aspects of the
 code work as intended. In order to run these unit tests,
 I have placed the functions from the cross-val notebook in the 
-file `cross_val.py`. The file `test_hw5.py` contains the tests for 
+file `cross_val.py`. The file `test_cross_val.py` contains unit tests for 
 the functions. If you see these files, you can ignore them.
 
 ## Wrangling the Data
