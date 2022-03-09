@@ -28,24 +28,12 @@ the functions. If you see these files, you can ignore them.
 The data we're using already has its categorical variables stored as numbers
 instead of strings, so although we need to convert it to a numpy array, we 
 won't have to modify the data itself. But if this is not the case with your 
-data and you would like to perform cross-validation on it, read on for instructions
-on how to do so.
-
-The linear regression function we'll be using in our cross-validation
-needs the data we're using to be in the form of a numpy array, which 
-can only contain numbers. Because of this, any categorical variables 
-stored as strings in the data we're using need to be converted to numbers.
-For example, the `smoke` variable in our data set uses numbers to indicate
-cartegories as follows: 0 = never smoked, 1 = smokes now, 2 = smoked until pregnancy
-3 = smoked once, but not now, and 9 = unknown.
-
-If this is a conversion you need to perform for your data,
-use the function `data_wrangle` specified in cross_val notebook that 
-takes the csv filename for the data and a list of columns from the dataset 
-that need to be converted to numerical values.
+data and you would like to perform cross-validation on it, see the jupyter 
+notebook for this piece `cross_val.ipynb`.
 
 ## Implementing k-fold Cross-Validation
 
+In this section we will cover what cross-val is and motivations for using it.
 I've made a function `kfold_CV` that is coded in the cross_val notebook, which implements k-fold 
 cross-validation. The inputs for this function are the chosen dataset as a numpy
 array (with only numerical data), a list of the columns of the data set in order (so 
