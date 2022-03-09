@@ -1,13 +1,13 @@
 # Linear Regression and Cross-Validation
 
-Welcome to the first component of this portfolio on linear regression and cross-validation. 
-In this component, we will take a look at how cross-validation can help us select the appropriate
-variables for a linear regression model.
+Welcome to the first component of this portfolio on ML concepts and linear regression!
+In this component, we will take a look at how cross-validation can help us select the 
+appropriate variables for a linear regression model.
 
 For this example, we will use the dataset from my introductory statistics
 final group project, which is a maternal health and infant outcome dataset 
 called `babies.csv`. This data set contains information on the behavioral habits,
-education level, and physical characterists of mothers, fathers, and the 
+education level, and physical characteristics of mothers, fathers, and the 
 birth weight of their babies as an outcome variable for infant health. 
 This data set has many variables, of which we will only be using a few
 for the sake of conciseness and clarity. The variables we will be using
@@ -20,7 +20,7 @@ all located in a notebook called `cross_val.ipynb`.
 There are unit tests for this piece that check that all aspects of the
 code work as intended. In order to run these unit tests,
 I have placed the functions from the cross-val notebook in the 
-file `cross_val.py`. The file `test_hw5.py` contains the tests for 
+file `cross_val.py`. The file `test_cross_val.py` contains unit tests for 
 the functions. If you see these files, you can ignore them.
 
 ## Wrangling the Data
@@ -28,24 +28,12 @@ the functions. If you see these files, you can ignore them.
 The data we're using already has its categorical variables stored as numbers
 instead of strings, so although we need to convert it to a numpy array, we 
 won't have to modify the data itself. But if this is not the case with your 
-data and you would like to perform cross-validation on it, feel free to use 
-the function outlined below.
-
-The linear regression function we'll be using in our cross-validation
-needs the data we're using to be in the form of a numpy array, which 
-can only contain numbers. Because of this, any categorical variables 
-stored as strings in the data we're using need to be converted to numbers.
-For example, the `smoke` variable in our data set uses numbers to indicate
-cartegories as follows: 0 = never smoked, 1 = smokes now, 2 = smoked until pregnancy
-3 = smoked once, but not now, and 9 = unknown.
-
-If this is a conversion you need to perform for your data,
-use the function `data_wrangle` specified in cross_val notebook that 
-takes the csv filename for the data and a list of columns from the dataset 
-that need to be converted to numerical values.
+data and you would like to perform cross-validation on it, see the jupyter 
+notebook for this piece `cross_val.ipynb`.
 
 ## Implementing k-fold Cross-Validation
 
+In this section we will cover what cross-val is and motivations for using it.
 I've made a function `kfold_CV` that is coded in the cross_val notebook, which implements k-fold 
 cross-validation. The inputs for this function are the chosen dataset as a numpy
 array (with only numerical data), a list of the columns of the data set in order (so 
@@ -58,7 +46,7 @@ and output columns from the data set, divide the data into k folds,
 and then iteratively choose one fold to be the test set for k rounds of
 training and testing. The linear regression model is trained on 100-(100/k)% of the 
 data each iteration, with the input and output variables, and then is asked to 
-predict the values of output variable based on the input variable values in the
+predict the values of the output variable based on the input variable values in the
 test set. The error is then computed from the true and predicted values for each iteration,
 with the final cross-val error being the mean of all these errors.
 
