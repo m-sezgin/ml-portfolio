@@ -1,8 +1,8 @@
 # Linear Regression and Cross-Validation
 
-Welcome to the first component of this portfolio on linear regression and cross-validation. 
-In this component, we will take a look at how cross-validation can help us select the appropriate
-variables for a linear regression model.
+Welcome to the first component of this portfolio on ML concepts and linear regression!
+In this component, we will take a look at how cross-validation can help us select the 
+appropriate variables for a linear regression model.
 
 For this example, we will use the dataset from my introductory statistics
 final group project, which is a maternal health and infant outcome dataset 
@@ -28,8 +28,8 @@ the functions. If you see these files, you can ignore them.
 The data we're using already has its categorical variables stored as numbers
 instead of strings, so although we need to convert it to a numpy array, we 
 won't have to modify the data itself. But if this is not the case with your 
-data and you would like to perform cross-validation on it, feel free to use 
-the function outlined below.
+data and you would like to perform cross-validation on it, read on for instructions
+on how to do so.
 
 The linear regression function we'll be using in our cross-validation
 needs the data we're using to be in the form of a numpy array, which 
@@ -58,7 +58,7 @@ and output columns from the data set, divide the data into k folds,
 and then iteratively choose one fold to be the test set for k rounds of
 training and testing. The linear regression model is trained on 100-(100/k)% of the 
 data each iteration, with the input and output variables, and then is asked to 
-predict the values of output variable based on the input variable values in the
+predict the values of the output variable based on the input variable values in the
 test set. The error is then computed from the true and predicted values for each iteration,
 with the final cross-val error being the mean of all these errors.
 
