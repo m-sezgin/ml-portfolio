@@ -1,6 +1,6 @@
 # Gradient Descent and Linear Regression
 
-In this notebook, we'll take a look at gradient descent and discuss how it can be useful for finding the slope and interept coefficients for lines of best fit.
+In this notebook, we'll take a look at gradient descent and discuss how it can be useful for finding the slope and intercept coefficients for lines of best fit.
 
 ## Intuition for Gradient Descent
 
@@ -17,7 +17,7 @@ In this section, we'll take a look at what a from-scratch implementation of grad
 
 ## Other Types of Gradient Descent
 
-Now that we've seen vanilla gradient descent in the above section, what other types of gradient descent are out there? I introduce stochastic and mini-batch gradient descent, with a from-scratch implementation of stochastic gradient descent to more concretely identify how the algorithm works (mini-batch is not included for the sake of brevity)
+Now that we've seen vanilla gradient descent in the above section, what other types of gradient descent are out there? I introduce stochastic and mini-batch gradient descent, with a from-scratch implementation of stochastic gradient descent to more concretely identify how the algorithm works (mini-batch is not included for the sake of brevity).
 
 
 ## How Does This Implementation Stack Up?
