@@ -1,6 +1,6 @@
 # Gradient Descent and Linear Regression
 
-In this notebook, we'll take a look at gradient descent and discuss how it can be useful for finding the slope and interept coefficients for lines of best fit.
+In this notebook, we'll take a look at gradient descent and discuss how it can be useful for finding the slope and intercept coefficients for lines of best fit.
 
 ## Intuition for Gradient Descent
 
